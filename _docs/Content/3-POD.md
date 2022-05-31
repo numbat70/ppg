@@ -24,8 +24,8 @@ published: true
 
 #### 15-75 	Safari Intervals 	
 ##### Heading to Todd Seat:
-- 10 X 60 second Sprints <> 60 second Recovery ( 20 Mins)
-- 6 X 90 second Sprints <> 60 Second Recovery ( 15 Mins)
+- 10 X 60 second Sprints >>> 60 second Recovery ( 20 Mins)
+- 6 X 90 second Sprints >>> 60 Second Recovery ( 15 Mins)
 
 ##### Return Trip from Todd Seat:
 - 1 min RPE_8 
@@ -44,7 +44,7 @@ Remember the Basics
 - Look where you are going
 
 #### 90-115 	Out and Back
-- Relays 	M Shaped Course but with looser corners
+- Relays on M Shaped Course (but with looser corners. Practicing shallower angle buoy turns)
 
 #### 115-120 	Warmdown 	 
 - Car Park area 
