@@ -27,28 +27,28 @@ published: true
 - Head around the Buoys  
 
 #### 20 (35)   Intervals   
-- 50m Sprints  <> 50m Recovery
+- 50m Sprints  >>> 50m Recovery
 - 2 Groups 
    - Pink: 14 foot boards
    - Orange: Other
-- First 20 mins Steady  Pace Clockwise (RPE 9: SPRINT)
-- 2nd 10 Mins Varying Pace Anti-Clockwise (RPE 9 & 10: SPRINT)  
+- 20 mins Steady Pace Clockwise (RPE 9: SPRINT)
+- 10 Mins Varying Pace Anti-Clockwise (RPE 9 & 10: SPRINT)  
   
 #### 30 (65)   1k time   
 - Car Park to Black Ditch Bay Drafting Practice
 - Return 1k timed
 
 #### 1km  timed Return  
-- Draft Up. 
+- 1km Draft Up to Blackditch Bay. 
 - 1km Sprint back
 
 #### 30 (95)   
-- Intervals   50m Sprint  <> 50m Recovery
+- Intervals   50m Sprint  >>> 50m Recovery
 - 2 Groups 
    - Pink: 14 foot boards
    - Orange: Other
-- First 20 mins Steady  Pace Clockwise (RPE 9: SPRINT)
-- 2nd 10 Mins Varying Pace Anti-Clockwise (RPE 9 & 10: SPRINT)  
+- 20 mins Steady  Pace Clockwise (RPE 9: SPRINT)
+- 10 Mins Varying Pace Anti-Clockwise (RPE 9 & 10: SPRINT)  
 
 #### 15 (110)   Buoy Turns   Basics
 - Stomach, Shoulder, Superman
@@ -66,6 +66,3 @@ published: true
 
 #### Goals   
 - Chat about types of Goals  
-
-
-
