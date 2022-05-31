@@ -7,7 +7,7 @@ published: true
 ##### 16th May 2022
 
 #### Warmup (On Land) 
-##### Thoracic Rotation * 3** 
+##### Thoracic Rotation X 3
 - Rotate in the Pipe (Back of hand on rear pelvis)
 - Cat Cow
 - Thread the needle
