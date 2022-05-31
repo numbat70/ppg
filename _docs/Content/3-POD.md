@@ -29,7 +29,7 @@ published: true
 
 ##### Return Trip from Todd Seat:
 - 1 min RPE_8 
-- 20Seconds RPE_10 and 
+- 20 Seconds RPE_10 
 - Repeat X 5
 - Lactate Buffering is fun right?)
 
