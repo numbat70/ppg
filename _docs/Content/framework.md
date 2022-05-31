@@ -33,4 +33,4 @@ Ballpark figures might be
 | --------- | ---  |  ---  | ---  |
 | 200m time | 2.5 mins  | 1.8 mins  |  1.25 min    | 
 | 1km time  | 12 mins  | 9.5 mins  |  7 mins    |
-| 5km time  |   |   |      |
+| 5km time  | 60 mins  | 45 mins  |   35 mins   |
