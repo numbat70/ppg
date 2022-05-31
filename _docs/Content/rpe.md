@@ -37,16 +37,17 @@ We are avoiding that 6 to 7 zone that most people will fall into when trying to 
 For Endurance: 
 - To get optimal results, we want to Train Aerobic without any Lactate Buildup in our bodies. 
 - To do this we keep below teh Lactate Threshold: 
-- This is teh **Severe** section on the graph
+- This is the **Severe** section on the graph
 
 For Speed: 
 - We want to train anaerobically and this means operating above the 2nd Lactate Threshold. 
 - This is the  **Severe** section on the graph
 
-The Middle zone (threshold training:
+The Middle zone (threshold training):
 - Has it's place but not when we are trying to rapidly improve speed and endurance. 
 - It is not good at raising either of these characteristics
 - It is useful once speed and endurance targets have been reached. 
+- We are trying to NOT TRAIN AT 6 or 7
 
 ![Lactate Thresholds Graph](https://numbat70.github.io/ppg/PPGRPE2.png)
 
