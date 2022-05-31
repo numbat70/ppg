@@ -29,8 +29,8 @@ The answer is it depends.
 
 Ballpark figures might be
 
-| Distance	| Beginner	| Club | Racer	| Elite | 
-| --------- | ---  | ---  | ---  | ---  |
-| 200m time |   |   |   |   | 
-| 1km time  |   |   |   |   |
-| 5km time  |   |   |   |   |
+| Distance	| Beginner	| Club Racer	| Elite | 
+| --------- | ---  |  ---  | ---  |
+| 200m time |   |   |      | 
+| 1km time  | 12 mins  | 9.5 mins  |  7 mins    |
+| 5km time  |   |   |      |
