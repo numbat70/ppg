@@ -20,3 +20,6 @@ We simplify this further by using the analogy of effort feeling the same as:
 
 
 ## Rate of Perceived Effort (RPE)
+
+![Rate of Perceived Effort Graph](PPGRPE.png)
+
