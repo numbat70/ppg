@@ -35,7 +35,7 @@ published: true
 - Breathe...
 
 #### 80-90 	Skills 	Fun Turn This Week:
-Concentrate on 3 Steps and then Turn
+Concentrate on 3 Steps and then Turn  
 Remember the Basics
 - Stomach, Shoulder, Superman
 - Lower centre of gravity
