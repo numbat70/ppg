@@ -21,9 +21,10 @@ published: true
 - Wrists
 - Shoulders  
 
-#### 5 (15)   Warmup (On Water)    • Gentle Paddle
-• Start to speed it up a bit
-• Head around the Buoys  
+#### 5 (15)   Warmup (On Water)    
+- Gentle Paddle
+- Start to speed it up a bit
+- Head around the Buoys  
 
 #### 20 (35)   Intervals   
 - 50m Sprints  <> 50m Recovery
