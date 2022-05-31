@@ -6,13 +6,13 @@ published: true
 ---
 
 #### 0-10 Warmup (On Land)
-**Thoracic Rotations**
+##### Thoracic Rotations
 - Rotate in the Pipe (Back of hand on rear pelvis)
 - Cat Cow
 - Thread the needle
 - Reach for the stars
 
-**Hip Flexors**
+##### Hip Flexors
 - Kneeling Lunge
 - Wide Squat
 - Frog
@@ -23,11 +23,11 @@ published: true
 - Head around the Buoys
 
 #### 15-75 	Safari Intervals 	
-**Heading to Todd Seat:**
+##### Heading to Todd Seat:
 - 10 X 60 second Sprints <> 60 second Recovery ( 20 Mins)
 - 6 X 90 second Sprints <> 60 Second Recovery ( 15 Mins)
 
-**Return Trip from Todd Seat:**
+##### Return Trip from Todd Seat:
 - 1 min RPE_8 20Seconds RPE_10 and repeat
 - Lactate Buffering (fun?)
 
