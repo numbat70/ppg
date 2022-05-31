@@ -1,5 +1,5 @@
 ---
-title: POD 2b
+title: POD 2
 category: Sessions
 order: 2
 published: true
