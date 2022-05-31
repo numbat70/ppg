@@ -21,7 +21,7 @@ published: true
   
 #### Warmup (On Water)
 - Gentle Paddle
-- Start o speed it up a bit
+- Start to speed it up a bit
 -   Head around the Buoys  
 
 #### 2k time   
