@@ -4,13 +4,6 @@ category: Sessions
 order: 1
 published: true
 ---
-<style>
-h4 {
-  color: white;
-  padding: 5px;
-  background-color: blue 
-}
-</style>
 ##### 16th May 2022
 
 #### Warmup (On Land) 
