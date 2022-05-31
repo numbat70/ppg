@@ -33,7 +33,9 @@ published: true
 - First 20 mins Steady  Pace Clockwise (RPE 9: SPRINT)
 - 2nd 10 Mins Varying Pace Anti-Clockwise (RPE 9 & 10: SPRINT)  
   
-#### 30 (65)   1k time   Car Park to Black Ditch Bay Drafting Practice
+#### 30 (65)   1k time   
+- Car Park to Black Ditch Bay Drafting Practice
+- Return 1k timed
 
 #### 1km  timed Return  
 - Draft Up. 
