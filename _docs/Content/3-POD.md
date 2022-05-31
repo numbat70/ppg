@@ -5,14 +5,6 @@ order: 3
 published: true
 ---
 
-<style>
-h4 {
-  color: white;
-  padding: 5px;
-  background-color: blue 
-}
-</style>
-
 #### 0-10 Warmup (On Land)
 **Thoracic Rotations**
 - Rotate in the Pipe (Back of hand on rear pelvis)
