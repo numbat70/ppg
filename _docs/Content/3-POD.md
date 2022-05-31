@@ -28,8 +28,10 @@ published: true
 - 6 X 90 second Sprints <> 60 Second Recovery ( 15 Mins)
 
 ##### Return Trip from Todd Seat:
-- 1 min RPE_8 20Seconds RPE_10 and repeat
-- Lactate Buffering (fun?)
+- 1 min RPE_8 
+- 20Seconds RPE_10 and 
+- Repeat X 5
+- Lactate Buffering is fun right?)
 
 #### 75-80 	Rest and Water 	 
 - Breathe...
