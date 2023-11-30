@@ -17,40 +17,25 @@
     }
   ],
   "ppgTimeline": [
-    {
-      "description": "bbbbbb",
-      "title": "bbbbbbb",
-      "date": "2024/01/01"
-    },
-
-    {
-      "description": "Winter Season",
-      "title": "Winter Season",
-      "start": "2023/12/01",
-      "end": "2024/02/01",
-      "color": "#0033BB"
-    },
-
-    {
-      "description": "Early Season",
-      "title": "Early Season",
-      "start": "2024/03/01",
-      "end": "2024/04/01",
+   {
+      "description": "ppg (along with Moderna) uses a new vaccine approach involving messenger RNA",
+      "title": "ppg/BioNTech Trial",
+      "start": "2024/03/29",
+      "end": "2024/11/29",
       "color": "#00a950"
     },
     {
-      "description": "Main Season",
-      "title": "Main Season",
-      "start": "2024/05/01",
-      "end": "2024/09/01",
+      "description": "ppg was the first company to report positive phase 3 clinical data",
+      "title": "Review",
+      "start": "2024/11/29",
+      "end": "2024/12/11",
       "color": "#00a950"
     },
-
     {
       "description": "Dosage - 2 doses, 3 weeks apart",
       "title": "US Approval",
       "start": "2024/12/11",
-      "end": "2024/06/01",
+      "end": "2021/06/30",
       "color": "#00a950"
     }
   ],
@@ -64,13 +49,6 @@
       "description": "Paddle Skedaddle",
       "title": "Paddle Skedaddle",
       "date": "2024/04/01"
-    },
-    {
-      "description": "Main Season",
-      "title": "Main Season",
-      "start": "2024/05/01",
-      "end": "2024/09/01",
-      "color": "#00a950"
     }
   ]
  }
