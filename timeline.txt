@@ -27,7 +27,7 @@
       "description": "Winter Season",
       "title": "Winter Season",
       "start": "2023/12/01",
-      "end": "2024/02/30",
+      "end": "2024/02/01",
       "color": "#0033BB"
     },
 
@@ -35,14 +35,14 @@
       "description": "Early Season",
       "title": "Early Season",
       "start": "2024/03/01",
-      "end": "2024/04/30",
+      "end": "2024/04/01",
       "color": "#00a950"
     },
     {
       "description": "Main Season",
       "title": "Main Season",
       "start": "2024/05/01",
-      "end": "2024/09/30",
+      "end": "2024/09/01",
       "color": "#00a950"
     },
 
@@ -50,7 +50,7 @@
       "description": "Dosage - 2 doses, 3 weeks apart",
       "title": "US Approval",
       "start": "2024/12/11",
-      "end": "2024/06/30",
+      "end": "2024/06/01",
       "color": "#00a950"
     }
   ],
@@ -58,18 +58,18 @@
     {
       "description": "Trent 100",
       "title": "Trent 100",
-      "date": "2024/07/19"
+      "date": "2024/07/01"
     },
     {
       "description": "Paddle Skedaddle",
       "title": "Paddle Skedaddle",
-      "date": "2024/04/13"
+      "date": "2024/04/01"
     },
     {
       "description": "Main Season",
       "title": "Main Season",
       "start": "2024/05/01",
-      "end": "2024/09/30",
+      "end": "2024/09/01",
       "color": "#00a950"
     }
   ]
