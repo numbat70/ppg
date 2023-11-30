@@ -1,11 +1,6 @@
 {
   "ppgFacts": [
     {
-      "description": "Started coaching beginner SUP",
-      "title": "SUP Coaching Starts",
-      "date": "2017/04/01"
-    },
-    {
       "description": "Race and Tour Coach qualification",
       "title": "Race Coaching Starts",
       "date": "2020/06/09"
