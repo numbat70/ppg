@@ -3,7 +3,7 @@
     {
       "description": "Race and Tour Coach qualification",
       "title": "Race Coaching Starts",
-      "date": "2024/06/09"
+      "date": "2024/06/09" 
     },
     {
       "description": "xxx",
