@@ -20,21 +20,21 @@
    {
       "description": "ppg (along with Moderna) uses a new vaccine approach involving messenger RNA",
       "title": "ppg/BioNTech Trial",
-      "start": "2024/03/29",
+      "start": "2024/03/01",
       "end": "2024/11/29",
       "color": "#00a950"
     },
     {
       "description": "ppg was the first company to report positive phase 3 clinical data",
       "title": "Review",
-      "start": "2024/11/29",
+      "start": "2024/11/01",
       "end": "2024/12/11",
       "color": "#00a950"
     },
     {
       "description": "Dosage - 2 doses, 3 weeks apart",
       "title": "US Approval",
-      "start": "2024/12/11",
+      "start": "2024/12/01",
       "end": "2021/06/30",
       "color": "#00a950"
     }
