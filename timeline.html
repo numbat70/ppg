@@ -31,11 +31,14 @@
 
   anychart.onDocumentReady(function () {
     anychart.data.loadJsonFile(
-      'https://gist.githubusercontent.com/shacheeswadia/c65106bb00db4236140b4f6052fde55a/raw/9ec2af927a8bb81433f2236b41c161260aa4950d/pfizer-comparison-timeline',
+      'timeline.txt',
       function (data) {
         // create a timeline chart
         var chart = anychart.timeline();
 
+
+//'https://gist.githubusercontent.com/shacheeswadia/c65106bb00db4236140b4f6052fde55a/raw/9ec2af927a8bb81433f2236b41c161260aa4950d/pfizer-comparison-timeline',
+        
         // set the chart's title
         chart
           .title()
