@@ -64,21 +64,21 @@
       "title": "Winter",
       "start": "2023/12/01",
       "end": "2024/02/29",
-      "color": "#0000aa"
+      "color": "#AFD2E9"
     },
     {
       "description": "Early Season",
       "title": "Early Season",
       "start": "2024/03/01",
       "end": "2024/04/29",
-      "color": "#0033bb"
+      "color": "#9D96B8"
     },
     {
       "description": "Main Season",
       "title": "Main Season",
       "start": "2024/05/01",
       "end": "2024/09/30",
-      "color": "#00a950"
+      "color": "#9A7197"
     }
   ],
   "otherRaces": [
