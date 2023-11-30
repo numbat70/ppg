@@ -31,32 +31,32 @@ anychart.onDocumentReady(function () {
   var chart = anychart.timeline();
 
   var seasons = [
-    ['Winter', Date.UTC(2004,0,4), Date.UTC(2010,2,22)],
-    ['Early', Date.UTC(2004,0,4), Date.UTC(2010,2,22)],
-    ['Main', Date.UTC(2004,0,25), Date.UTC(2018,5,10)],
-    ['Late', Date.UTC(2012,7,6)],
-    ['Winter', Date.UTC(2012,7,6)]
+    ['Winter', Date.UTC(2004,0,4), Date.UTC(2024,2,22)],
+    ['Early', Date.UTC(2004,0,4), Date.UTC(2024,2,22)],
+    ['Main', Date.UTC(2004,0,25), Date.UTC(2024,5,10)],
+    ['Late', Date.UTC(2024,7,6), Date.UTC(2024,5,10)    ],
+    ['Winter', Date.UTC(2024,7,6), Date.UTC(2024,5,10)]
   ];
 
   var racesScottish = [
-    [Date.UTC(2004,1,6), 'First intentional grinding of a rock'],
-    [Date.UTC(2005,2,9), 'Dust devil cleaned solar panels'],
-    [Date.UTC(2009,4,1), 'Stuck in the sand trap']
+    [Date.UTC(2024,1,6), 'First intentional grinding of a rock'],
+    [Date.UTC(2024,2,9), 'Dust devil cleaned solar panels'],
+    [Date.UTC(2024,4,1), 'Stuck in the sand trap']
   ];
 
   var racesOther = [
-    [Date.UTC(2004,1,17), 'Digs hole with his wheel'],
-    [Date.UTC(2005,0,14), 'Found meteorite'],
-    [Date.UTC(2006,8,26), 'Reached Victoria crater'],
-    [Date.UTC(2009,9,10), 'Found vulcanic rock'],
-    [Date.UTC(2014,6,28), 'Drove more than 40 kilometers'],
-    [Date.UTC(2018,5,1), 'Got caught in global sand storm']
+    [Date.UTC(2024,1,17), 'Digs hole with his wheel'],
+    [Date.UTC(2024,2,14), 'Found meteorite'],
+    [Date.UTC(2024,3,26), 'Reached Victoria crater'],
+    [Date.UTC(2024,4,10), 'Found vulcanic rock'],
+    [Date.UTC(2024,5,28), 'Drove more than 40 kilometers'],
+    [Date.UTC(2024,6,1), 'Got caught in global sand storm']
   ];
 
   var curiosityMoments = [
-    [Date.UTC(2012, 7, 22), 'Started driving'],
-    [Date.UTC(2014, 8, 1), 'Reached Mount Sharp'],
-    [Date.UTC(2018, 10, 26), 'Spotted shiny object']
+    [Date.UTC(2024, 7, 22), 'Started driving'],
+    [Date.UTC(2024, 8, 1), 'Reached Mount Sharp'],
+    [Date.UTC(2024, 10, 26), 'Spotted shiny object']
   ];
 
   var rangesSeriesRovers = chart.range(seasons).name('Seasons');
