@@ -45,7 +45,7 @@
       "color": "#00a950"
     }
   ],
-  "otherVaccines": [
+  "otherRaces": [
     {
       "description": "Trent 100",
       "title": "Trent 100",
