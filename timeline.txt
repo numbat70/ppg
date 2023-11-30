@@ -44,7 +44,7 @@
       "color": "#00a950"
     }
   ],
-  "otherVaccines": [
+  "ppgOther": [
     {
       "description": "xxx",
       "title": "xxx",
