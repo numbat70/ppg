@@ -103,13 +103,13 @@
           johnsonData = [],
           novavaxData = [];
 
-        for (var j = 0; j < data.otherVaccines.length; j++) {
-          if(data.otherVaccines[j].title.startsWith('ppl')) {
-            pplData.push(data.otherVaccines[j]);
-          }else if(data.otherVaccines[j].title.startsWith('Johnson')) {
-            johnsonData.push(data.otherVaccines[j]);
+        for (var j = 0; j < data.ppgOther.length; j++) {
+          if(data.ppgOther[j].title.startsWith('xxx')) {
+            pplData.push(data.ppgOther[j]);
+          }else if(data.ppgOther[j].title.startsWith('yyy')) {
+            johnsonData.push(data.ppgOther[j]);
           }else{
-            novavaxData.push(data.otherVaccines[j]);
+            novavaxData.push(data.ppgOther[j]);
           }
         }
 
