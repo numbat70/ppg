@@ -22,6 +22,30 @@
       "title": "bbbbbbb",
       "date": "2024/01/01"
     },
+
+    {
+      "description": "Winter Season",
+      "title": "Winter Season",
+      "start": "2023/12/01",
+      "end": "2024/02/30",
+      "color": "#00a950"
+    },
+
+    {
+      "description": "Early Season",
+      "title": "Early Season",
+      "start": "2024/03/01",
+      "end": "2024/04/30",
+      "color": "#00a950"
+    },
+    {
+      "description": "Main Season",
+      "title": "Main Season",
+      "start": "2024/05/01",
+      "end": "2024/09/30",
+      "color": "#00a950"
+    },
+
     {
       "description": "Dosage - 2 doses, 3 weeks apart",
       "title": "US Approval",
