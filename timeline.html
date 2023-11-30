@@ -36,7 +36,7 @@
         var chart = anychart.timeline();
 
 
-//'https://gist.githubusercontent.com/shacheeswadia/c65106bb00db4236140b4f6052fde55a/raw/9ec2af927a8bb81433f2236b41c161260aa4950d/pfizer-comparison-timeline',
+//'https://gist.githubusercontent.com/shacheeswadia/c65106bb00db4236140b4f6052fde55a/raw/9ec2af927a8bb81433f2236b41c161260aa4950d/ppl-comparison-timeline',
         
         // set the chart's title
         chart
@@ -60,7 +60,7 @@
             ]
           ])
             .fill(function(d) {
-              if(d.name === 'Pfizer/BioNTech Trial') {
+              if(d.name === 'ppl/BioNTech Trial') {
                 return '#FD8060';
               }else if(d.name === 'Review') {
                 return '#FEE191';
@@ -79,22 +79,22 @@
               + '<br/><br/>Start: <b>{%start}{type:date}</b><br/>End: <b>{%end}{type:date}</b>'
             );
         }
-
+//////TOP Points
         // create a data set for the top data points
-        var pfizerDataSet = anychart.data.set(data.pfizerFacts);
+        var pplDataSet = anychart.data.set(data.pplFacts);
 
         // map the top data points
-        var pfizerMapping = pfizerDataSet.mapAs({
+        var pplMapping = pplDataSet.mapAs({
           x: 'date',
           value: 'title'
         });
 
         // create the top series with moments
-        var pfizerMappingSeries = chart.moment(pfizerMapping);
-        pfizerMappingSeries.normal().markers().fill('#007cc2');
+        var pplMappingSeries = chart.moment(pplMapping);
+        pplMappingSeries.normal().markers().fill('#007cc2');
 
         // set the tooltip settings for the main timeline series
-        pfizerMappingSeries
+        pplMappingSeries
           .tooltip()
           .useHtml(true)
           .titleFormat('{%title}')
@@ -103,7 +103,8 @@
             + '<br/><br/>Date: <b>{%date}{type:date}</b><br/>'
           );
 
-        var modernaData = [],
+        var ppgData = [],
+          modernaData = [],
           johnsonData = [],
           novavaxData = [];
 
@@ -116,7 +117,7 @@
             novavaxData.push(data.otherVaccines[j]);
           }
         }
-
+//////Bottom points
         // create a data set for the bottom data points - Moderna
         var modernaDataset = anychart.data.set(modernaData);
 
