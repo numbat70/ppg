@@ -1,9 +1,9 @@
 {
   "ppgFacts": [
     {
-      "description": "Approval of ppg/BioNTech vaccine in UK",
-      "title": "UK Approval",
-      "date": "2020/12/02"
+      "description": "Started coaching beginner SUP",
+      "title": "SUP Coaching Starts",
+      "date": "2017/04/01"
     },
     {
       "description": "Approval of ppg/BioNTech vaccine in Canada",
