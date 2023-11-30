@@ -6,9 +6,9 @@
       "date": "2017/04/01"
     },
     {
-      "description": "Approval of ppg/BioNTech vaccine in Canada",
+      "description": "Race and Tour Coach qualification",
       "title": "Canada Approval",
-      "date": "2020/12/09"
+      "date": "2020/06/09"
     },
     {
       "description": "Sandra Lindsay, a critical care nurse from Northwell Long Island Jewish Medical Center was the first vaccinated in New York",
