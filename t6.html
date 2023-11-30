@@ -22,13 +22,15 @@
 </head>
 <body>
 
+
+
 <div id="container"></div>
 
 <script>
 anychart.onDocumentReady(function () {
   var chart = anychart.timeline();
 
-  var rangesData = [
+  var seasons = [
     ['Spirit Mars rover', Date.UTC(2004,0,4), Date.UTC(2010,2,22)],
     ['Opportunity Mars rover', Date.UTC(2004,0,25), Date.UTC(2018,5,10)],
     ['Mars Science Laboratory (Curiosity rover)', Date.UTC(2012,7,6)]
@@ -55,10 +57,10 @@ anychart.onDocumentReady(function () {
     [Date.UTC(2018, 10, 26), 'Spotted shiny object']
   ];
 
-  var rangesSeriesRovers = chart.range(rangesData).name('Mars rovers');
-  var spiritMomentsSeries = chart.moment(spiritMoments).name('Spirit rover');
-  var oppyMomentsSeries = chart.moment(oppyMoments).name('Opportunity rover');
-  var curiosityMomentsSeries = chart.moment(curiosityMoments).name('Curiosity rover');
+  var rangesSeriesRovers = chart.range(seasons).name('Seasons');
+  var spiritMomentsSeries = chart.moment(spiritMoments).name('Other Races');
+  var oppyMomentsSeries = chart.moment(oppyMoments).name('Scottish Races');
+  var curiosityMomentsSeries = chart.moment(curiosityMoments).name('xxx');
 
   chart.container('container').draw();
 });
