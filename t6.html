@@ -38,13 +38,13 @@ anychart.onDocumentReady(function () {
     ['Winter', Date.UTC(2012,7,6)]
   ];
 
-  var spiritMoments = [
+  var racesScottish = [
     [Date.UTC(2004,1,6), 'First intentional grinding of a rock'],
     [Date.UTC(2005,2,9), 'Dust devil cleaned solar panels'],
     [Date.UTC(2009,4,1), 'Stuck in the sand trap']
   ];
 
-  var oppyMoments = [
+  var racesOther = [
     [Date.UTC(2004,1,17), 'Digs hole with his wheel'],
     [Date.UTC(2005,0,14), 'Found meteorite'],
     [Date.UTC(2006,8,26), 'Reached Victoria crater'],
@@ -60,8 +60,8 @@ anychart.onDocumentReady(function () {
   ];
 
   var rangesSeriesRovers = chart.range(seasons).name('Seasons');
-  var spiritMomentsSeries = chart.moment(spiritMoments).name('Other Races');
-  var oppyMomentsSeries = chart.moment(oppyMoments).name('Scottish Races');
+  var spiritMomentsSeries = chart.moment(racesScottish).name('Scottish Races');
+  var oppyMomentsSeries = chart.moment(racesOther).name('Other Races');
   var curiosityMomentsSeries = chart.moment(curiosityMoments).name('xxx');
 
   chart.container('container').draw();
