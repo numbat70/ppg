@@ -11,24 +11,14 @@
       "date": "2020/06/09"
     },
     {
-      "description": "Sandra Lindsay, a critical care nurse from Northwell Long Island Jewish Medical Center was the first vaccinated in New York",
-      "title": "1st ppg Vaccine shot in US",
-      "date": "2020/12/14"
+      "description": "xxx",
+      "title": "xxx",
+      "date": "2020/xx/xx"
     },
-    {
-      "description": "Approval of ppg/BioNTech vaccine in EU",
-      "title": "EU Approval",
-      "date": "2020/12/21"
-    },    
-    {
-      "description": "ppg/BioNTech announced that their vaccine is highly effective in adolescents 12 to 15 years old",
-      "title": "Highly effective in adolescents",
-      "date": "2021/03/31"
-    },
-    {
-      "description": "Call for fast-track approval of ppg/BioNTech vaccine by India",
-      "title": "India Approval Call",
-      "date": "2021/04/14"
+        {
+      "description": "xxx",
+      "title": "xxx",
+      "date": "2020/xx/xx"
     }
   ],
   "ppgTimeline": [
