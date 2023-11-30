@@ -28,7 +28,7 @@
       "title": "Winter Season",
       "start": "2023/12/01",
       "end": "2024/02/30",
-      "color": "#00a950"
+      "color": "#0033BB"
     },
 
     {
