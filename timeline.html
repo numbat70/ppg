@@ -51,13 +51,13 @@
 
 
         // create the main timeline data points
-        for (var i = 0; i < data.pfizerTimeline.length; i++) {
+        for (var i = 0; i < data.ppgTimeline.length; i++) {
           // create a range series
           var series = chart.range([
             [
-              data.pfizerTimeline[i].title,
-              data.pfizerTimeline[i].start,
-              data.pfizerTimeline[i].end
+              data.ppgTimeline[i].title,
+              data.ppgTimeline[i].start,
+              data.ppgTimeline[i].end
             ]
           ])
             .fill(function(d) {
@@ -76,7 +76,7 @@
             .useHtml(true)
             .titleFormat('{%x}')
             .format(
-              data.pfizerTimeline[i].description
+              data.ppgTimeline[i].description
               + '<br/><br/>Start: <b>{%start}{type:date}</b><br/>End: <b>{%end}{type:date}</b>'
             );
         }
@@ -208,8 +208,8 @@
         var textMarker2 = chart.textMarker(1);
 
         // set the values of the markers
-        textMarker1.value(data.pfizerTimeline[0].start);
-        textMarker2.value(data.pfizerTimeline[0].start);
+        textMarker1.value(data.ppgTimeline[0].start);
+        textMarker2.value(data.ppgTimeline[0].start);
 
         // set the text of the markers
         textMarker1.useHtml(true);
