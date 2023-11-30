@@ -7,7 +7,7 @@
     },
     {
       "description": "Race and Tour Coach qualification",
-      "title": "Canada Approval",
+      "title": "Race Coaching Starts",
       "date": "2020/06/09"
     },
     {
@@ -16,25 +16,16 @@
       "date": "2020/01/01"
     },
         {
-      "description": "xx1111x",
-      "title": "xx11111x",
+      "description": "ccccc",
+      "title": "ccccc",
       "date": "2020/01/01"
     }
   ],
   "ppgTimeline": [
     {
-      "description": "ppg (along with Moderna) uses a new vaccine approach involving messenger RNA",
-      "title": "ppg/BioNTech Trial",
-      "start": "2020/03/29",
-      "end": "2020/11/29",
-      "color": "#00a950"
-    },
-    {
-      "description": "ppg was the first company to report positive phase 3 clinical data",
-      "title": "Review",
-      "start": "2020/11/29",
-      "end": "2020/12/11",
-      "color": "#00a950"
+      "description": "bbbbbb",
+      "title": "bbbbbbb",
+      "date": "2021/01/01"
     },
     {
       "description": "Dosage - 2 doses, 3 weeks apart",
