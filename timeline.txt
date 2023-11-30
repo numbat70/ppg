@@ -16,8 +16,8 @@
       "date": "2020/01/01"
     },
         {
-      "description": "xxx",
-      "title": "xxx",
+      "description": "xx1111x",
+      "title": "xx11111x",
       "date": "2020/01/01"
     }
   ],
@@ -44,14 +44,14 @@
       "color": "#00a950"
     }
   ],
-  "ppgOther": [
+  "otherVaccines": [
     {
-      "description": "xxx",
-      "title": "xxx",
-      "date": "2020/01/01"
+      "description": "zzzzzz",
+      "title": "xxzzzzzzzx",
+      "date": "2021/01/01"
     },
     {
-      "description": "US pauses J&J vaccine over clot reports",
+      "description": "abcabcabcabc",
       "title": "Johnson and Johnson vaccine paused",
       "date": "2021/04/13"
     }
