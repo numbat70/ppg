@@ -1,4 +1,4 @@
-<html> 
+ly<html> 
 <head> 
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-timeline.min.js"></script>
@@ -31,9 +31,11 @@ anychart.onDocumentReady(function () {
   var chart = anychart.timeline();
 
   var seasons = [
-    ['Spirit Mars rover', Date.UTC(2004,0,4), Date.UTC(2010,2,22)],
-    ['Opportunity Mars rover', Date.UTC(2004,0,25), Date.UTC(2018,5,10)],
-    ['Mars Science Laboratory (Curiosity rover)', Date.UTC(2012,7,6)]
+    ['Winter', Date.UTC(2004,0,4), Date.UTC(2010,2,22)],
+    ['Early', Date.UTC(2004,0,4), Date.UTC(2010,2,22)],
+    ['Main', Date.UTC(2004,0,25), Date.UTC(2018,5,10)],
+    ['Late', Date.UTC(2012,7,6)],
+    ['Winter', Date.UTC(2012,7,6)]
   ];
 
   var spiritMoments = [
