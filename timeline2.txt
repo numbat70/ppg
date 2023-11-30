@@ -24,24 +24,24 @@
   ],
   "ppgTimeline": [
    {
-      "description": "1111",
-      "title": "1111",
+      "description": "Winter",
+      "title": "Winter",
+      "start": "2023/12/01",
+      "end": "2024/02/29",
+      "color": "#00a950"
+    },
+    {
+      "description": "Early Season",
+      "title": "Early Season",
       "start": "2024/03/01",
-      "end": "2024/11/29",
+      "end": "2024/04/29",
       "color": "#00a950"
     },
     {
-      "description": "p222",
-      "title": "222",
-      "start": "2024/11/01",
-      "end": "2024/12/11",
-      "color": "#00a950"
-    },
-    {
-      "description": "333",
-      "title": "333",
-      "start": "2024/12/01",
-      "end": "2021/06/30",
+      "description": "Main Season",
+      "title": "Main Season",
+      "start": "2024/04/01",
+      "end": "2024/09/30",
       "color": "#00a950"
     }
   ],
