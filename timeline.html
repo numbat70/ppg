@@ -56,9 +56,9 @@
             ]
           ])
             .fill(function(d) {
-              if(d.name === 'ppg/BioNTech Trial') {
+              if(d.name === 'Early Days') {
                 return '#FD8060';
-              }else if(d.name === 'Review') {
+              }else if(d.name === 'Covid') {
                 return '#FEE191';
               }
               return '#B0D8A4';
@@ -99,13 +99,13 @@
             + '<br/><br/>Date: <b>{%date}{type:date}</b><br/>'
           );
 
-        var modernaData = [],
+        var pplData = [],
           johnsonData = [],
           novavaxData = [];
 
         for (var j = 0; j < data.otherVaccines.length; j++) {
-          if(data.otherVaccines[j].title.startsWith('Moderna')) {
-            modernaData.push(data.otherVaccines[j]);
+          if(data.otherVaccines[j].title.startsWith('ppl')) {
+            pplData.push(data.otherVaccines[j]);
           }else if(data.otherVaccines[j].title.startsWith('Johnson')) {
             johnsonData.push(data.otherVaccines[j]);
           }else{
@@ -113,23 +113,23 @@
           }
         }
 
-        // create a data set for the bottom data points - Moderna
-        var modernaDataset = anychart.data.set(modernaData);
+        // create a data set for the bottom data points - ppl
+        var pplDataset = anychart.data.set(pplData);
 
-        // map the bottom data set - Moderna
-        var modernaDatasetMapping = modernaDataset.mapAs({
+        // map the bottom data set - ppl
+        var pplDatasetMapping = pplDataset.mapAs({
           x: 'date',
           value: 'title'
         });
 
-        // create the bottom series - Moderna
-        var modernaSeries = chart.moment(modernaDatasetMapping);
+        // create the bottom series - ppl
+        var pplSeries = chart.moment(pplDatasetMapping);
 
         // set the direction for the series
-        modernaSeries.direction('down');
+        pplSeries.direction('down');
 
-        // set the tooltip settings for the Moderna series
-        modernaSeries
+        // set the tooltip settings for the ppl series
+        pplSeries
           .tooltip()
           .useHtml(true)
           .titleFormat('{%title}')
