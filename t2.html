@@ -1,0 +1,252 @@
+<html> 
+<head> 
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-timeline.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+</style>
+</head>
+<body>
+
+  <div id="container"></div>
+
+
+        ///////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////
+  <script>
+  anychart.onDocumentReady(function () {
+    anychart.data.loadJsonFile(
+
+      'timeline2.txt',
+      function (data) {
+        // create a timeline chart
+        var chart = anychart.timeline();
+      ///////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////
+
+//'https://gist.githubusercontent.com/shacheeswadia/c65106bb00db4236140b4f6052fde55a/raw/9ec2af927a8bb81433f2236b41c161260aa4950d/ppg-comparison-timeline',
+        
+        // set the chart's title
+        chart
+          .title()
+          .enabled(true)
+          .useHtml(true)
+          .text(
+            '<span style = "color: #007cc2; font-size:20px;">Performance Paddling Group</span>' +
+            '<br/><span style="font-size: 16px;">(Loch SUP)</span>'
+          );
+
+
+        // create the main timeline data points
+        for (var i = 0; i < data.ppgTimeline.length; i++) {
+          // create a range series
+          var series = chart.range([
+            [
+              data.ppgTimeline[i].title,
+              data.ppgTimeline[i].start,
+              data.ppgTimeline[i].end
+            ]
+          ])
+            .fill(function(d) {
+              if(d.name === 'Winter Season') {
+                return '#FD8060';
+              }else if(d.name === 'Review') {
+                return '#FEE191';
+              }
+              return '#B0D8A4';
+            })
+            .stroke('none');
+
+          // set the tooltip settings for the main timeline series
+          series
+            .tooltip()
+            .useHtml(true)
+            .titleFormat('{%x}')
+            .format(
+              data.ppgTimeline[i].description
+              + '<br/><br/>Start: <b>{%start}{type:date}</b><br/>End: <b>{%end}{type:date}</b>'
+            );
+        }
+//////TOP Points
+        // create a data set for the top data points
+        var ppgDataSet = anychart.data.set(data.ppgFacts);
+
+        // map the top data points
+        var ppgMapping = ppgDataSet.mapAs({
+          x: 'date',
+          value: 'title'
+        });
+
+        // create the top series with moments
+        var ppgMappingSeries = chart.moment(ppgMapping);
+        ppgMappingSeries.normal().markers().fill('#007cc2');
+
+        // set the tooltip settings for the main timeline series
+        ppgMappingSeries
+          .tooltip()
+          .useHtml(true)
+          .titleFormat('{%title}')
+          .format(
+            '{%description}'
+            + '<br/><br/>Date: <b>{%date}{type:date}</b><br/>'
+          );
+
+        var ppgData = [],
+          modernaData = [],
+          johnsonData = [],
+          novavaxData = [];
+
+        for (var j = 0; j < data.otherRaces.length; j++) {
+          if(data.otherRaces[j].title.startsWith('Moderna')) {
+            modernaData.push(data.otherRaces[j]);
+          }else if(data.otherRaces[j].title.startsWith('Johnson')) {
+            johnsonData.push(data.otherRaces[j]);
+          }else{
+            novavaxData.push(data.otherRaces[j]);
+          }
+        }
+//////Bottom points
+        // create a data set for the bottom data points - Moderna
+        var modernaDataset = anychart.data.set(modernaData);
+
+        // map the bottom data set - Moderna
+        var modernaDatasetMapping = modernaDataset.mapAs({
+          x: 'date',
+          value: 'title'
+        });
+
+        // create the bottom series - Moderna
+        var modernaSeries = chart.moment(modernaDatasetMapping);
+
+        // set the direction for the series
+        modernaSeries.direction('down');
+
+        // set the tooltip settings for the Moderna series
+        modernaSeries
+          .tooltip()
+          .useHtml(true)
+          .titleFormat('{%title}')
+          .format(
+            '{%description}'
+            + '<br/><br/>Date: <b>{%date}{type:date}</b><br/>'
+          );
+
+        // create a data set for the bottom data points - Johnson
+        var johnsonDataset = anychart.data.set(johnsonData);
+
+        // map the bottom data set - Johnson
+        var johnsonDatasetMapping = johnsonDataset.mapAs({
+          x: 'date',
+          value: 'title'
+        });
+
+        // create the bottom series - Johnson
+        var johnsonSeries = chart.moment(johnsonDatasetMapping);
+
+        // set the direction for the series
+        johnsonSeries.direction('down');
+
+        // set the tooltip settings for the Johnson series
+        johnsonSeries
+          .tooltip()
+          .useHtml(true)
+          .titleFormat('{%title}')
+          .format(
+            '{%description}'
+            + '<br/><br/>Date: <b>{%date}{type:date}</b><br/>'
+          );
+
+        // create a data set for the bottom data points - Novavax
+        var novavaxDataset = anychart.data.set(novavaxData);
+
+        // map the bottom data set - Novavax
+        var novavaxDatasetMapping = novavaxDataset.mapAs({
+          x: 'date',
+          value: 'title'
+        });
+
+        // create the bottom series - Novavax
+        var novavaxSeries = chart.moment(novavaxDatasetMapping);
+
+        // set the direction for the series
+        novavaxSeries.direction('down');
+
+        // set the tooltip settings for the Novavax series
+        novavaxSeries
+          .tooltip()
+          .useHtml(true)
+          .titleFormat('{%title}')
+          .format(
+            '{%description}'
+            + '<br/><br/>Date: <b>{%date}{type:date}</b><br/>'
+          );
+
+        // set the chart scale levels
+        chart.scale().zoomLevels([
+          [
+            { unit: 'month', count: 1 }
+          ]
+        ]);
+
+        // enable the chart scroller
+        chart.scroller().enabled(true);
+
+        // create two text markers
+        var textMarker1 = chart.textMarker(0);
+        var textMarker2 = chart.textMarker(1);
+
+        // set the values of the markers
+        textMarker1.value(data.ppgTimeline[0].start);
+        textMarker2.value(data.ppgTimeline[0].start);
+
+        // set the text of the markers
+        textMarker1.useHtml(true);
+        textMarker1.text(
+          'Scottish SUP Races');
+        textMarker2.text(
+          'Other SUP Races');
+
+        // configure the position of the markers
+        textMarker1.anchor('leftcenter');
+        textMarker2.anchor('leftcenter');
+        textMarker1.rotation(0);
+        textMarker2.rotation(0);
+        textMarker1.offsetY('35%');
+        textMarker2.offsetY('60%');
+
+        // configure the font of the markers
+        textMarker1.fontColor('#007cc2');
+        textMarker1.fontWeight(600);
+        textMarker2.fontWeight(600);
+
+        // set the container id for the chart
+        chart.container('container');
+
+        // initiate the chart drawing
+        chart.draw();
+
+      }
+    );
+  });
+
+</script>
+</body>
+</html>
+
+
