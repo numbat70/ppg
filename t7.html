@@ -61,12 +61,14 @@ anychart.onDocumentReady(function () {
     [Date.UTC(2024,6,1), 'Got caught in global sand storm']
   ];
 
+  
   var curiosityMoments = [
     [Date.UTC(2024, 7, 22), 'Started driving'],
     [Date.UTC(2024, 8, 1), 'Reached Mount Sharp'],
     [Date.UTC(2024, 10, 26), 'Spotted shiny object']
   ];
 
+  
   var rangesSeriesRovers = chart.range(seasons).name('Seasons');
   var spiritMomentsSeries = chart.moment(racesScottish).name('Scottish Races');
   var oppyMomentsSeries = chart.moment(racesOther).name('Other Races');
