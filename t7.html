@@ -118,20 +118,13 @@ anychart.onDocumentReady(function () {
   //Text Labels
   //Text Labels
   
-
-  
-  // create two text markers
+// create two text markers
 var textMarker1 = chart.textMarker(0);
 var textMarker2 = chart.textMarker(1);
 
 // set the values of markers
 textMarker1.value(Date.UTC(2024,0,1));
-textMarker2.value(Date.UTC(2024,0,1));
-
-// set the text of markers
-textMarker1.useHtml(true);
-textMarker1.text("Scotttish Races");
-textMarker2.text("Other Races");
+textMarker2.value(Date.UTC(2024,2,1));
 
 // configure the font of markers
 textMarker1.fontColor("#dd2c00");
@@ -141,23 +134,24 @@ textMarker2.fontWeight(600);
 
 // configure the background of the first marker
 textMarker1.background().enabled(false);
-textMarker1.background().fill("#dd2c00", 0.0);
-textMarker1.background().stroke("#dd2c00", 2);
 
 // configure the background of the 2nd marker
 textMarker2.background().enabled(false);
-textMarker2.background().fill("#00bfa5", 0.0);
-textMarker2.background().stroke("#00bfa5", 2);
 
-  //Position the text markers
-textMarker1.anchor('leftcenter');
-textMarker2.anchor('leftcenter');
-textMarker1.rotation(0);
-textMarker2.rotation(0);
-textMarker1.offsetX('10%');
-textMarker2.offsetX('10%');
-textMarker1.offsetY('25%');
-textMarker2.offsetY('75%');
+          // set the values of text markers
+        textMarker1.value(Date.UTC(2024,0,5));
+        textMarker2.value(Date.UTC(2024,2,5));
+
+        textMarker1.text("Winter Season Line");
+        textMarker2.text("Early Season Line");
+
+        textMarker1.anchor('leftcenter');
+        textMarker2.anchor('leftcenter');
+        textMarker1.rotation(-90);
+        textMarker2.rotation(-90);
+        textMarker1.offsetY('25%');
+        textMarker2.offsetY('25%');
+
 
   ////////////////////////////////////
   ////////////////////////////////////
@@ -178,27 +172,12 @@ textMarker2.offsetY('75%');
         // set the stroke of markers
         lineMarker1.stroke("#dd2c00", 3, "10 5", "round");
         lineMarker2.stroke("#00bfa5", 3, "10 5", "round");
-        // create two text markers
-        var textMarker3 = chart.textMarker(0);
-        var textMarker4 = chart.textMarker(1);
-        
+
         // get the values of line markers
         var lineMarker1Value = lineMarker1.value()
         var lineMarker2Value = lineMarker2.value();
         
-        // set the values of text markers
-        textMarker3.value(Date.UTC(2024,0,5));
-        textMarker4.value(Date.UTC(2024,2,5));
 
-        textMarker3.text("Winter Season Line");
-        textMarker4.text("Early Season Line");
-
-        textMarker3.anchor('leftcenter');
-        textMarker4.anchor('leftcenter');
-        textMarker3.rotation(-90);
-        textMarker4.rotation(-90);
-        textMarker3.offsetY('25%');
-        textMarker4.offsetY('25%');
 
   ////////////////////////////////////
   ////////////////////////////////////
