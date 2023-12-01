@@ -68,13 +68,11 @@ anychart.onDocumentReady(function () {
   var racesKey = [
     [Date.UTC(2024, 0, 22), 'A: Scottish Nationals...'],
 
-
-    {x: Date.UTC(2024,2,21), y: "Meeting 1",
-            normal:   {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
-            hovered:  {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
-            selected: {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"}
-    },
-
+   // {x: Date.UTC(2024,2,21), y: "Meeting 1",
+   //         normal:   {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
+   //         hovered:  {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
+   //         selected: {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"}
+   // },
     
     [Date.UTC(2024, 2, 22), 'Remember to...'],
     [Date.UTC(2024, 10, 22), 'Remember to...']
@@ -105,10 +103,12 @@ anychart.onDocumentReady(function () {
 
     seriesKey.labels({
     text: "xxx",
-    background: { fill: "#59C9A5", corners: 0 },
+    background: { fill: "#FF101F", corners: 0 },
     padding: 10,
   });
 
+
+  
   // enable the chart scroller
   chart.scroller().enabled(true);
 
@@ -215,7 +215,8 @@ chart.scale().zoomLevels([
 
 
 // zoom the chart to the given dates
-//chart.zoomTo(Date.UTC(2005,3,1), Date.UTC(2006,3,1)); 
+//chart.zoomTo(Date.UTC(2024,0,1), Date.UTC(2024,5,1)); 
+
 // fit the chart to the container
 chart.fit();
 
