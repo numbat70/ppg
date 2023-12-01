@@ -140,16 +140,16 @@ textMarker1.fontWeight(600);
 textMarker2.fontWeight(600);
 
 // configure the background of the first marker
-textMarker1.background().enabled(true);
-textMarker1.background().fill("#dd2c00", 0.2);
+textMarker1.background().enabled(false);
+textMarker1.background().fill("#dd2c00", 0.0);
 textMarker1.background().stroke("#dd2c00", 2);
 
 // configure the background of the 2nd marker
-textMarker2.background().enabled(true);
-textMarker2.background().fill("#00bfa5", 0.2);
+textMarker2.background().enabled(false);
+textMarker2.background().fill("#00bfa5", 0.0);
 textMarker2.background().stroke("#00bfa5", 2);
 
-  //Position teh text markers
+  //Position the text markers
 textMarker1.anchor('leftcenter');
 textMarker2.anchor('leftcenter');
 textMarker1.rotation(0);
@@ -178,7 +178,7 @@ textMarker2.offsetY('75%');
         
         // set the stroke of markers
         lineMarker1.stroke("#dd2c00", 3, "10 5", "round");
-        lineMarker2.stroke("#00bfa5", 3, );
+        lineMarker2.stroke("#00bfa5", 3, "10 5", "round");
         // create two text markers
         var textMarker3 = chart.textMarker(0);
         var textMarker4 = chart.textMarker(1);
