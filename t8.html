@@ -1,0 +1,254 @@
+<html> 
+<head> 
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-timeline.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+</style>
+</head>
+<body>
+  
+<div id="container"></div>
+
+<script>
+anychart.onDocumentReady(function () {
+  var chart = anychart.timeline();
+
+  var seasons = [
+    ['Winter', Date.UTC(2023,11,1), Date.UTC(2024,1,29)],
+    ['Early', Date.UTC(2024,2,1), Date.UTC(2024,3,30)],
+    ['Main', Date.UTC(2024,4,1), Date.UTC(2024,8,30)],
+    ['Late', Date.UTC(2024,9,1), Date.UTC(2024,10,30)],
+    ['Winter', Date.UTC(2024,11,1), Date.UTC(2024,11,30)]
+  ];
+
+  var racesScottish = [
+    [Date.UTC(2023,11,17), 'Linlithgow Winter Series'],
+    [Date.UTC(2024,0,21), 'Linlithgow Winter Series'],
+    [Date.UTC(2024,1,18), 'Linlithgow Winter Series'],
+    [Date.UTC(2024,2,17), 'Linlithgow Winter Series'],
+    [Date.UTC(2024,2,29), 'The Central Belter'],
+    [Date.UTC(2024,3,27), 'Glencoe'],
+    [Date.UTC(2024,4,25), 'Lochwinnoch Loop'],
+    [Date.UTC(2024,5,29), 'Loch Venacher'],
+    [Date.UTC(2024,5,30), 'Tweed River Raid'],
+    [Date.UTC(2024,6,21), 'Loch Lomond'],
+    [Date.UTC(2024,7,31), 'Edinburgh- Preston Pans'],
+    [Date.UTC(2024,8,27), 'Great Glen SUP Challenge - TBC'],
+    [Date.UTC(2024,8,30), 'Monster the Loch - TBC'],
+    [Date.UTC(2024,9,30), 'Glasgow to Edinburgh - TBC'],
+    [Date.UTC(2024,10,30), 'Linlithgow Time Trial - TBC']
+  ];
+
+  var racesOther = [
+    [Date.UTC(2024,3,27), 'Race to the Castle'],
+    [Date.UTC(2024,4,11), 'Paddle Skedaddle'],
+    [Date.UTC(2024,4,24), 'Sup Fest (Lake District)'],
+    [Date.UTC(2024,6,18), 'Trent100'],
+    [Date.UTC(2024,8,01), 'The Big Dipper TBC'],
+    [Date.UTC(2024,8,07), '11 Cities (Holland)'],
+    [Date.UTC(2024,9,26), 'SUP The Creek']
+    
+  ];
+  
+  var curiosityMoments = [
+    [Date.UTC(2024, 0, 22), 'Remember to...'],
+    [Date.UTC(2024, 0, 22), ''],
+     [Date.UTC(2024, 0, 22), ''],
+     [Date.UTC(2024, 0, 22), ''],
+     [Date.UTC(2024, 0, 22), ''],
+     [Date.UTC(2024, 0, 22), ''],
+
+  {x: Date.UTC(2024,2,21), y: "Meeting 1",
+   normal:   {
+               marker: {
+                         type: "star5", size: 8,
+                         fill: "#dd2c00", stroke: "2 #dd2c00"
+                       },
+               stroke: "2 #dd2c00"
+             },
+   hovered:  {
+               marker: {
+                         size: 8,
+                         fill: "#dd2c00", stroke: "2 #dd2c00"
+                       },
+               stroke: "2 #dd2c00"
+             },
+   selected: {
+                marker: {
+                          size: 8,
+                          fill: "#dd2c00", stroke: "2 #dd2c00"
+                        },
+                stroke: "2 #dd2c00"
+             }
+  },
+
+    
+    [Date.UTC(2024, 2, 22), 'Remember to...'],
+    [Date.UTC(2024, 10, 22), 'Remember to...']
+  ];
+  
+  var rangesSeriesRovers = chart.range(seasons).name('Seasons');
+  var spiritMomentsSeries = chart.moment(racesScottish).name('Scottish Races');
+  var oppyMomentsSeries = chart.moment(racesOther).name('Other Races');
+  var curiosityMomentsSeries = chart.moment(curiosityMoments).name('xxx');
+
+
+  // Above or below the spine
+  curiosityMomentsSeries.direction("down");
+
+  
+  // labels formating with an object
+  spiritMomentsSeries.labels({
+    text: "xxx",
+    background: { fill: "#736CED", corners: 0 },
+    padding: 10,
+  });
+
+  oppyMomentsSeries.labels({
+    text: "xxx",
+    background: { fill: "#EF6F6C", corners: 0 },
+    padding: 10,
+  });
+
+    curiosityMomentsSeries.labels({
+    text: "xxx",
+    background: { fill: "#59C9A5", corners: 0 },
+    padding: 10,
+  });
+
+  // enable the chart scroller
+  chart.scroller().enabled(true);
+
+  // configure the axis
+  chart.axis().height(50);
+  //chart.axis().fill("#00724e");
+  //chart.axis().stroke("#004e72");
+  //chart.axis().ticks().stroke("#00b37a", 3);
+  
+  ////////////////////////////////////
+  //////////////////////////////////
+  //Text Labels
+  //Text Labels
+  //Text Labels
+  
+// create two text markers
+var textMarker1 = chart.textMarker(0);
+var textMarker2 = chart.textMarker(1);
+
+// set the values of markers
+textMarker1.value(Date.UTC(2024,0,1));
+textMarker2.value(Date.UTC(2024,2,1));
+
+// configure the font of markers
+textMarker1.fontColor("#dd2c00");
+textMarker2.fontColor("#00bfa5");
+textMarker1.fontWeight(600);
+textMarker2.fontWeight(600);
+
+// configure the background of the first marker
+textMarker1.background().enabled(false);
+
+// configure the background of the 2nd marker
+textMarker2.background().enabled(false);
+
+          // set the values of text markers
+        textMarker1.value(Date.UTC(2024,0,5));
+        textMarker2.value(Date.UTC(2024,2,5));
+
+        textMarker1.text("Winter Season Line");
+        textMarker2.text("Early Season Line");
+
+        textMarker1.anchor('leftcenter');
+        textMarker2.anchor('leftcenter');
+        textMarker1.rotation(-90);
+        textMarker2.rotation(-90);
+        textMarker1.offsetY('25%');
+        textMarker2.offsetY('25%');
+
+  
+
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  //Vertical Lines
+  //Vertical Lines
+  //Vertical Lines
+  
+        // create two line markers
+        var lineMarker1 = chart.lineMarker(0);
+        var lineMarker2 = chart.lineMarker(1);
+        
+        // set values of markers
+        lineMarker1.value(Date.UTC(2024,0,1));
+        lineMarker2.value(Date.UTC(2024,2,1));
+        
+        // set the stroke of markers
+        lineMarker1.stroke("#dd2c00", 3, "10 5", "round");
+        lineMarker2.stroke("#00bfa5", 3, "10 5", "round");
+
+        // get the values of line markers
+        var lineMarker1Value = lineMarker1.value()
+        var lineMarker2Value = lineMarker2.value();
+        
+
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  // create two range markers
+//var rangeMarker1 = chart.rangeMarker(0);
+//var rangeMarker2 = chart.rangeMarker(1);
+
+// set the range of the first marker
+//rangeMarker1.from(Date.UTC(2024,0,1));
+//rangeMarker1.to(Date.UTC(2024,1,31));
+
+// set the range of the second marker
+//rangeMarker2.from(Date.UTC(2024,2,1));
+//rangeMarker2.to(Date.UTC(2024,4,31));
+
+// set the fill of markers
+//rangeMarker1.fill("#dd2c00", 0.2);
+//rangeMarker2.fill("#00bfa5", 0.2);
+
+// set zoom levels of the scale
+chart.scale().zoomLevels([
+  [
+    {unit: "year", count: 1},
+    {unit: "month", count: 1}
+  ]
+]);
+
+
+// zoom the chart to the given dates
+//chart.zoomTo(Date.UTC(2005,3,1), Date.UTC(2006,3,1)); 
+// fit the chart to the container
+chart.fit();
+
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  chart.container('container').draw();
+});
+
+  
+</script>
+</body>
+</html>
