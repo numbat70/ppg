@@ -90,6 +90,38 @@ anychart.onDocumentReady(function () {
   // enable the chart scroller
   chart.scroller().enabled(true);
 
+
+        // create two text markers
+        var textMarker1 = chart.textMarker(0);
+        var textMarker2 = chart.textMarker(1);
+
+        // set the values of the markers
+        textMarker1.value(data.ppgTimeline[0].start);
+        textMarker2.value(data.ppgTimeline[0].start);
+
+        // set the text of the markers
+        textMarker1.useHtml(true);
+        textMarker1.text(
+          'Scottish SUP Races');
+        textMarker2.text(
+          'Other SUP Races');
+
+        // configure the position of the markers
+        textMarker1.anchor('leftcenter');
+        textMarker2.anchor('leftcenter');
+        textMarker1.rotation(0);
+        textMarker2.rotation(0);
+        textMarker1.offsetY('35%');
+        textMarker2.offsetY('60%');
+
+        // configure the font of the markers
+        textMarker1.fontColor('#007cc2');
+        textMarker1.fontWeight(600);
+        textMarker2.fontWeight(600);
+
+
+
+  
   chart.container('container').draw();
 });
 
