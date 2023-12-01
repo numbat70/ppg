@@ -65,14 +65,12 @@ anychart.onDocumentReady(function () {
     [Date.UTC(2024,9,1), 'xxx']
     
   ];
-
   
   var curiosityMoments = [
     [Date.UTC(2024, 7, 22), 'Started driving'],
     [Date.UTC(2024, 8, 1), 'Reached Mount Sharp'],
     [Date.UTC(2024, 10, 26), 'Spotted shiny object']
   ];
-
   
   var rangesSeriesRovers = chart.range(seasons).name('Seasons');
   var spiritMomentsSeries = chart.moment(racesScottish).name('Scottish Races');
@@ -89,13 +87,11 @@ anychart.onDocumentReady(function () {
   
   // enable the chart scroller
   chart.scroller().enabled(true);
-
-
-        // create two text markers
-        var textMarker1 = chart.textMarker(0);
-        var textMarker2 = chart.textMarker(1);
-
   
+  // create two text markers
+    var textMarker1 = chart.textMarker(0);
+    var textMarker2 = chart.textMarker(1);
+
   chart.container('container').draw();
 });
 
