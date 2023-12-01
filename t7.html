@@ -79,6 +79,11 @@ anychart.onDocumentReady(function () {
   var oppyMomentsSeries = chart.moment(racesOther).name('Other Races');
   var curiosityMomentsSeries = chart.moment(curiosityMoments).name('xxx');
 
+
+  // Above or below the spine
+  curiosityMomentsSeries.direction("down");
+
+  
   // labels formating with an object
   spiritMomentsSeries.labels({
     text: "xxx",
