@@ -65,19 +65,19 @@ anychart.onDocumentReady(function () {
     
   ];
   
-  var curiosityMoments = [
-    [Date.UTC(2024, 0, 22), 'Remember to...'],
+  var racesKey = [
+    [Date.UTC(2024, 0, 22), 'A: Scottish Nationals...'],
     [Date.UTC(2024, 0, 22), ''],
      [Date.UTC(2024, 0, 22), ''],
      [Date.UTC(2024, 0, 22), ''],
      [Date.UTC(2024, 0, 22), ''],
      [Date.UTC(2024, 0, 22), ''],
 
-     {x: Date.UTC(2024,2,21), y: "Meeting 1",
-            normal:   {marker: {size: 6, type: "star5", fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
-            hovered:  {marker: {size: 12, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
-            selected: {marker: {size: 10, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"}
-      },
+    {x: Date.UTC(2024,2,21), y: "Meeting 1",
+            normal:   {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
+            hovered:  {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"},
+            selected: {marker: {size: 8, fill: "#dd2c00", stroke: "2 #dd2c00"},stroke: "2 #dd2c00"}
+    },
 
     
     [Date.UTC(2024, 2, 22), 'Remember to...'],
@@ -85,29 +85,29 @@ anychart.onDocumentReady(function () {
   ];
   
   //var rangesSeriesRovers = chart.range(seasons).name('Seasons');
-  var spiritMomentsSeries = chart.moment(racesScottish).name('Scottish Races');
-  var oppyMomentsSeries = chart.moment(racesOther).name('Other Races');
-  var curiosityMomentsSeries = chart.moment(curiosityMoments).name('xxx');
+  var seriesScottish = chart.moment(racesScottish).name('Scottish Races');
+  var seriesOther = chart.moment(racesOther).name('Other Races');
+  var seriesKey = chart.moment(racesKey).name('xxx');
 
 
   // Above or below the spine
-  curiosityMomentsSeries.direction("down");
+  seriesKey.direction("down");
 
   
   // labels formating with an object
-  spiritMomentsSeries.labels({
+  seriesScottish.labels({
     text: "xxx",
     background: { fill: "#736CED", corners: 0 },
     padding: 10,
   });
 
-  oppyMomentsSeries.labels({
+  seriesOther.labels({
     text: "xxx",
     background: { fill: "#EF6F6C", corners: 0 },
     padding: 10,
   });
 
-    curiosityMomentsSeries.labels({
+    seriesKey.labels({
     text: "xxx",
     background: { fill: "#59C9A5", corners: 0 },
     padding: 10,
