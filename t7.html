@@ -155,6 +155,35 @@ textMarker1.padding(10);
 textMarker1.offsetX(50);
 textMarker2.offsetY(240);
 
+
+
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+
+          / create two line markers
+        var lineMarker1 = chart.lineMarker(0);
+        var lineMarker2 = chart.lineMarker(1);
+        
+        // set values of markers
+        lineMarker1.value(Date.UTC(2024,0,1));
+        lineMarker2.value(Date.UTC(2024,5,1));
+        
+        // set the stroke of markers
+        lineMarker1.stroke("#dd2c00", 3);
+        lineMarker2.stroke("#00bfa5", 3, "10 5", "round");
+        // create two text markers
+        var textMarker3 = chart.textMarker(0);
+        var textMarker4 = chart.textMarker(1);
+        
+        // get the values of line markers
+        var lineMarker1Value = lineMarker1.value()
+        var lineMarker2Value = lineMarker2.value();
+        
+        // set the values of text markers
+        textMarker3.value(lineMarker1Value);
+        textMarker4.value(lineMarker2Value);
   
   ////////////////////////////////////
   ////////////////////////////////////
