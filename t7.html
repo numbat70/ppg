@@ -196,7 +196,13 @@ textMarker2.background().enabled(false);
 //rangeMarker1.fill("#dd2c00", 0.2);
 //rangeMarker2.fill("#00bfa5", 0.2);
 
-
+// set zoom levels of the scale
+chart.scale().zoomLevels([
+  [
+    {unit: "year", count: 1},
+    {unit: "month", count: 1}
+  ]
+]);
 
   ////////////////////////////////////
   ////////////////////////////////////
